@@ -29,8 +29,14 @@ def recCoin(coins, money):
     return changeamount
 
 
-# User Input
-coins = [10,5, 2, 1]
+# User Input -All good
+
+MasterList = usingJSON()
+coins = []
+
+for i in range(len(MasterList)-1,0-1,-1):
+    coins.append(MasterList[i][0])
+
 cost = int(input("Inserte el precio de su compra: "))
 
 while cost > 0:
